@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif,;
+    font-family: 'PT Serif', serif;
 }
 
 body{
@@ -13,15 +13,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #181313, #22003f);
+    background-image: url("images/bg.jpg");
 }
-
+.title h1{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: solid;
+    text-decoration: underline;
+    align-items: center;
+    color: #000000;
+}
 .calculator{
-    border: 5px solid #1d3e80;
+    border: 5px solid darkblue;
     padding: 20px;
     border-radius: 16px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    background: rgb(1, 1, 1);
+    box-shadow: 0px 10px 20px 10px rgba(0, 155, 227, 5);
 
 }
 
@@ -33,7 +42,7 @@ input{
     border-radius: 15px 50px;
     display: flex;
     background: transparent;
-    box-shadow: 0px 3px 15px rgb(56, 54, 54);
+    box-shadow: 0px 3px 20px 1px rgb(148, 134, 134);
     font-size: 40px;
     text-align: right;
     cursor: pointer;
@@ -45,7 +54,6 @@ input::placeholder{
 }
 
 button{
-    border: 2px;
     width: 60px;
     height: 60px;
     margin: 10px;
@@ -53,17 +61,17 @@ button{
     background: transparent;
     color: #ffffff;
     font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(191, 14, 255, 0.085);
+    box-shadow: 0px 3px 15px 2px rgba(187, 0, 255, 0.219);
     cursor: pointer;
 }
 
 .equalBtn{
-    background-color: #ff8000;
+    background-color: goldenrod;
     cursor: help;
 }
 
 .operator{
-    background-color: #000000;
+    background-color: #302e2e;
     color: rgb(123, 255, 0);
     cursor: cell;
 }
@@ -71,5 +79,5 @@ button{
 .clear{
     background-color: #ff0000;
     color: #ffffff;
-    cursor:progress;
+    cursor:copy;
 }
